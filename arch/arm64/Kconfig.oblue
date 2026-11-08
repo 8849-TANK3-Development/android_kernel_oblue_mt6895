@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config MACH_TANK3
+	bool "TANK3 board"
+	default n
+	help
+	  Support for 8849 TANK3 variants
+
+	  OBLUE (the creator of Unihertz / 8849) TANK3 board family shares
+	  one build: 8849 TANK 3, TANK 3 PRO, TANK 3s and 8849 SHARK.
+	  Only SHARK ships Android 14 out of the box, the others ship
+	  Android 13; from Android 14 on SHARK is folded into the TANK3
+	  board target, so a single device tree covers all of them.
+	  TANK X (6.12 kernel, Android 16 factory) is a different platform
+	  and is not covered by this option.
